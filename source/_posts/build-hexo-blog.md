@@ -138,6 +138,33 @@ hexo server
 
 
 
+3. 部署 GitHub action
+
+在根目录创建 ``.github\workflow\github-action-deploy.yml `` 文件,用来部署 GitHub action. 
+
+```
+name: Hexo Deploy Github Pages
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build and Deploy
+      uses: renzhaosy/hexo-deploy-action@master
+      env:
+        PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }} # github 私人权限token
+        PUBLISH_REPOSITORY: renzhaosy/renzhaosy.github.io # 打包之后想要部署到的仓库
+        BRANCH: master # 打包之后想要部署到的分支
+        PUBLISH_DIR: ./public  # hexo 打包之后文件的所在的文件夹
+
+
+        # https://renzhaosy.github.io/2019/11/09/github-action/ 参考网站
+```
+
 
 
 
