@@ -120,11 +120,21 @@ hexo server
 
 四种模式
 
-* Gemini
+* Gemini 双子
 
-<img src="./../../../../../AppData/Roaming/Typora/typora-user-images/image-20240914211509613.png" alt="image-20240914211509613" style="zoom:50%;" />
+<img src="./../../../../../AppData/Roaming/Typora/typora-user-images/image-20240914211509613.png" alt="image-20240914211509613" style="zoom:33%;" />
 
+* mist 朝雾
 
+<img src="./../../../../../AppData/Roaming/Typora/typora-user-images/image-20240914211728491.png" alt="image-20240914211728491" style="zoom:33%;" />
+
+* Muse 缪斯
+
+<img src="./../../../../../AppData/Roaming/Typora/typora-user-images/image-20240914212014950.png" alt="image-20240914212014950" style="zoom:33%;" />
+
+* Pisces 双鱼	
+
+<img src="./../../../../../AppData/Roaming/Typora/typora-user-images/image-20240914211914532.png" alt="image-20240914211914532" style="zoom:33%;" />
 
 
 
