@@ -176,7 +176,7 @@ jobs:
 ```
 
 
-
+[hexo github pages](https://hexo.io/zh-cn/docs/github-pages)
 
 
 [Custom Pages | NexT (theme-next.js.org)](https://theme-next.js.org/docs/theme-settings/custom-pages)

@@ -1,0 +1,103 @@
+# name: GitHub Actions Demo
+# run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+# on: [push]
+# jobs:
+#   Explore-GitHub-Actions:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+#       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+#       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+#       - name: Check out repository code
+#         uses: actions/checkout@v4
+#       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+#       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
+#       - name: List files in the repository
+#         run: |
+#           ls ${{ github.workspace }}
+#       - run: echo "🍏 This job's status is ${{ job.status }}."
+
+
+
+
+# name: Hexo Deploy Github Pages
+# on:
+#   push:
+#     branches:
+#       - main
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+
+
+#     steps:
+#     - name: Checkout
+#       uses: actions/checkout@v3
+
+
+#     -name: Build and Deploy
+#       # uses: renzhaosy/hexo-deploy-action@mast
+#       uses: leeqh98/hexo-deploy-action@main
+#       env:
+#         # PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }} # github 私人权限token
+#         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#         PUBLISH_REPOSITORY: leeqh98/leeqh98.github.io # 打包之后想要部署到的仓库
+#         BRANCH: main # 打包之后想要部署到的分支
+#         PUBLISH_DIR: ./public  # hexo 打包之后文件的所在的文件夹
+
+
+#         # https://renzhaosy.github.io/2019/11/09/github-action/ 参考网站
+
+
+name: Pages
+
+on:
+  push:
+    branches:
+      - main # default branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # If your repository depends on submodule, please see: https://github.com/actions/checkout
+          submodules: recursive
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          # Examples: 20, 18.19, >=16.20.2, lts/Iron, lts/Hydrogen, *, latest, current, node
+          # Ref: https://github.com/actions/setup-node#supported-version-syntax
+          node-version: "20"
+      - name: Cache NPM dependencies
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-npm-cache
+          restore-keys: |
+            ${{ runner.OS }}-npm-cache
+      - name: Install Dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
