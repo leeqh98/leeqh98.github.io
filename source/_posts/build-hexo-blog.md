@@ -1,3 +1,13 @@
+---
+title: Build Hexo Blog
+tags: 
+  - Hexo
+  - nodejs
+  - git
+categories: 
+  - Hexo 博客
+---
+
 # 构建 hexo 静态博客
 
 ## 准备环境 安装
@@ -122,19 +132,19 @@ hexo server
 
 * Gemini 双子
 
-<img src="./../../../../../AppData/Roaming/Typora/typora-user-images/image-20240914211509613.png" alt="image-20240914211509613" style="zoom:33%;" />
+
 
 * mist 朝雾
 
-<img src="./../../../../../AppData/Roaming/Typora/typora-user-images/image-20240914211728491.png" alt="image-20240914211728491" style="zoom:33%;" />
+
 
 * Muse 缪斯
 
-<img src="./../../../../../AppData/Roaming/Typora/typora-user-images/image-20240914212014950.png" alt="image-20240914212014950" style="zoom:33%;" />
+
 
 * Pisces 双鱼	
 
-<img src="./../../../../../AppData/Roaming/Typora/typora-user-images/image-20240914211914532.png" alt="image-20240914211914532" style="zoom:33%;" />
+
 
 
 
@@ -169,6 +179,24 @@ jobs:
 
 
 
+[Custom Pages | NexT (theme-next.js.org)](https://theme-next.js.org/docs/theme-settings/custom-pages)
+
+[开始使用 - NexT 使用文档 (iissnan.com)](https://theme-next.iissnan.com/getting-started.html)
+
+参考链接,进行进一步的各类设置.
+
+* 头像
+* 多页面
+  * Home
+  * tag
+  * archives
+  * categories
+  * series
+  * notes
+  * about
+
+* cc 协议设置
+
 ## 写博客
 
 ``` 
@@ -176,6 +204,11 @@ hexo new "My New Post" # 写博文
 hexo server # 运行服务器
 hexo generate # 生成静态文件
 hexo deploy # 部署站点
+hexo list [type] # post page route tag category
 
+
+hexo new [layout] <title> # 布局有三种 post page draft
 ```
 
+在文件开头添加上 yaml front-matter,
+标签和目录区分开来,相当于是分类和标签, 注意 开头的格式要注意缩进.

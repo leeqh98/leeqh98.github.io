@@ -95,15 +95,16 @@ open_graph:
 # Key is the name of menu item. If the translation for this item is available, the translated text will be loaded, otherwise the Key name will be used. Key is case-sensitive.
 # Value before `||` delimiter is the target link, value after `||` delimiter is the name of Font Awesome icon.
 # External url should start with http:// or https://
+# 设置菜单 多个页面设置
 menu:
-  #home: / || fa fa-home
-  #about: /about/ || fa fa-user
-  #tags: /tags/ || fa fa-tags
-  #categories: /categories/ || fa fa-th
-  #archives: /archives/ || fa fa-archive
-  #schedule: /schedule/ || fa fa-calendar
-  #sitemap: /sitemap.xml || fa fa-sitemap
-  #commonweal: /404/ || fa fa-heartbeat
+  #home: / || fa fa-home # 首页
+  #about: /about/ || fa fa-user # 关于页面
+  #tags: /tags/ || fa fa-tags # 标签页
+  #categories: /categories/ || fa fa-th # 分类页
+  #archives: /archives/ || fa fa-archive # 归档页
+  #schedule: /schedule/ || fa fa-calendar # 日程表
+  #sitemap: /sitemap.xml || fa fa-sitemap # 站点地图
+  #commonweal: /404/ || fa fa-heartbeat # 公益404
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
@@ -143,7 +144,7 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: #/images/avatar.gif
+  url: /uploads/avatar.jpg #/images/avatar.gif
   # If true, the avatar will be displayed in circle.
   rounded: false
   # If true, the avatar will be rotated with the cursor.
@@ -202,7 +203,9 @@ toc:
 # ---------------------------------------------------------------
 
 # Show multilingual switcher in footer.
-language_switcher: false
+language_switcher: true
+
+
 
 footer:
   # Specify the year when the site was setup. If not defined, current year will be used.
