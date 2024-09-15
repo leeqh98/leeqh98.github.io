@@ -183,6 +183,8 @@ git branch # 查看所有分支
 git switch main # 切换分支 main/master 的区别
 git merge [branch name] # 合并分支
 git diff # 查看冲突
+git merge [branch name] # 合并分支
+git diff # 查看
 ```
 
 
