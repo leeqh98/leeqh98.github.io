@@ -160,7 +160,9 @@ git status # 查看状态
 git log # 查看日志
 ```
 
-
+``` bash
+git clone git@github.com:username/repositoryname.git
+```
 
 
 
