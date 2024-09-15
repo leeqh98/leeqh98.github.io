@@ -184,16 +184,36 @@ git switch main # 切换分支 main/master 的区别
 git merge [branch name] # 合并分支
 git diff # 查看冲突
 git merge [branch name] # 合并分支
-git diff # 查看
+git diff # 查看冲突的内容
+gitk # 查看提交
 ```
 
 
 
-在不同分支进行不同的工作,然后合并分支
+在不同分支进行不同的工作,然后合并分支,git tag version 标记版本.
+
+## 协作
+
+可以考虑两台电脑自己体验这个协作的流程
+
+主分支 main 远程仓库
+
+thinkbook: leeqh98 用户
+
+thinkpad: liqh98 用户
+
+在GitHub上使用时,可以考虑使用 gh 工具来完成,然后将这些都图形界面和命令行界面同时进行.
 
 
 
 ##  推送
+
+```bash
+git remote -v
+git pull 
+git push -u origin main
+
+```
 
 
 
