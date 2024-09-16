@@ -96,3 +96,20 @@ appdata: local; locallow; roaming;
 Windows 的[库] 机制,让用户不用关心具体的路径之类的问题,现在的手机也是如此,一般人根本不用关心文件存放的位置, 只要用户层面点点点.
 
 Windows 的很多功能缺乏使用场景,或者自己完全不会用.一些自带的系统管理工具.家庭组和局域网共享功能没有用过,远程桌面功能也是很少使用.组策略
+
+
+## Terminal 使用oh-my-posh 
+pwsh 7 版本.
+以前有 pwsh 的module 现在变成单独的工具了,
+```powershell
+winget install JandeDobbeleer.OhMyPosh -s winget # 安装oh-my-posh
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\paradox.omp.json" | Invoke-Expression # 配置主题
+# 上面的可以放到配置文件中 code $PROFILE
+
+```
+
+
+使用 get-poshThemes 查看别的主题; 提高启动速度需要将oh-my-posh 的文件从扫毒软件中排除
+``(get-command oh-my-posh).source``
+
+此外就是需要配置支持 powerline 的字体,
