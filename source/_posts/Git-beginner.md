@@ -188,6 +188,8 @@ git diff # 查看冲突
 git merge [branch name] # 合并分支
 git diff # 查看冲突的内容
 gitk # 查看提交
+git branch -d [branch name] # 删除分支
+
 ```
 
 
@@ -230,6 +232,7 @@ git add file
 git commit -m "commit message"
 
 [git tag version]
+git show [tag name]
 
 git push -u origin main
 git pull origin main
