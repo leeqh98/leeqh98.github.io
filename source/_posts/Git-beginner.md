@@ -210,7 +210,7 @@ thinkpad: liqh98 用户
 
 ##  推送
 
-```bash
+`landscape``bash
 git remote -v
 git pull 
 git push -u origin main
@@ -232,4 +232,8 @@ git commit -m "commit message"
 [git tag version]
 
 git push -u origin main
+git pull origin main
+git fetch
+git checkout branchname
 
+[learn git branch](https://help.gitee.com/learn-Git-Branching)
