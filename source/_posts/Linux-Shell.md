@@ -24,7 +24,7 @@ oh-my-posh font install
 
 ## 基本的linux 命令
 info bash 学习一遍bash 的手册，然后在随用随查。
-man info help appros tldr
+man info help apropos tldr
 which type file whoami 
 cd pwd ls ll clear mv rm cp cat tar head tail less more 
 cd ~; cd ..; cd -;
