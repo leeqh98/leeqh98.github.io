@@ -113,3 +113,23 @@ oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\paradox.omp.json" | Invoke-
 ``(get-command oh-my-posh).source``
 
 此外就是需要配置支持 powerline 的字体,
+
+## 命令行工具的参数
+
+``` bash
+git -v # unix 风格或者是bsd 风格,历史原因,缩写流行
+git --version # gnu 风格,双横杠,全拼
+java -version # 混搭风格,其实也说得过去,
+git help # 新时代的没有横杠的风格
+cl /? # 微软风格, dos时代兼容其他的风格,路径是反斜杠
+
+
+```
+
+
+
+## 微软的技术
+
+MFC Windows forms wpf uwp
+
+maui
