@@ -97,14 +97,14 @@ open_graph:
 # External url should start with http:// or https://
 # 设置菜单 多个页面设置
 menu:
-  #home: / || fa fa-home # 首页
-  #about: /about/ || fa fa-user # 关于页面
-  #tags: /tags/ || fa fa-tags # 标签页
-  #categories: /categories/ || fa fa-th # 分类页
-  #archives: /archives/ || fa fa-archive # 归档页
-  #schedule: /schedule/ || fa fa-calendar # 日程表
-  #sitemap: /sitemap.xml || fa fa-sitemap # 站点地图
-  #commonweal: /404/ || fa fa-heartbeat # 公益404
+  home: / || fa fa-home # 首页
+  about: /about/ || fa fa-user # 关于页面
+  tags: /tags/ || fa fa-tags # 标签页
+  categories: /categories/ || fa fa-th # 分类页
+  archives: /archives/ || fa fa-archive # 归档页
+  # schedule: /schedule/ || fa fa-calendar # 日程表
+  sitemap: /sitemap.xml || fa fa-sitemap # 站点地图
+  commonweal: /404/ || fa fa-heartbeat # 公益404
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
@@ -593,7 +593,7 @@ fancybox: false
 # Medium Zoom is a JavaScript library for zooming images like Medium.
 # Warning: Do not enable both `fancybox` and `mediumzoom`.
 # For more information: https://medium-zoom.francoischalifour.com
-mediumzoom: false
+mediumzoom: true
 
 # Vanilla JavaScript plugin for lazyloading images.
 # For more information: https://apoorv.pro/lozad.js/demo/

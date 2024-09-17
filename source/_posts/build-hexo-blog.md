@@ -212,3 +212,13 @@ hexo new [layout] <title> # 布局有三种 post page draft
 
 在文件开头添加上 yaml front-matter,
 标签和目录区分开来,相当于是分类和标签, 注意 开头的格式要注意缩进.
+
+
+
+[侧边栏 - Hexo-NexT](https://hexo-next.readthedocs.io/zh-cn/latest/next/base/侧边栏/)
+
+[Custom Pages | NexT (theme-next.js.org)](https://theme-next.js.org/docs/theme-settings/custom-pages)
+
+
+
+后续配置参考
