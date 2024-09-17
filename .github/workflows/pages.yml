@@ -88,6 +88,11 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
+
+  update_bili:
+    steps:
+      - name: update bilibili
+        run: hexo bangumi -u
   deploy:
     needs: build
     permissions:

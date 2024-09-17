@@ -124,7 +124,7 @@ bangumi: # 追番设置
   enable: true
   source: bili
   # bgmInfoSource: 'bgmv0'
-  # path:
+  path: /bilibili/index.html
   vmid: 3493129258797903
   title: '追番列表'
   quote: '人生苦短, 我选纸片人！'
@@ -136,7 +136,7 @@ bangumi: # 追番设置
   showMyComment: false
   pagination: false
   metaColor:
-  color: green
+  color: 
   webp: true
   progress: true
   progressBar:

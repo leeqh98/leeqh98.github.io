@@ -104,6 +104,8 @@ menu:
   archives: /archives/ || fa fa-archive # 归档页
   # schedule: /schedule/ || fa fa-calendar # 日程表
   sitemap: /sitemap.xml || fa fa-sitemap # 站点地图
+  bilibili: /bilibili || fa-brands fa-bilibili # 哔哩哔哩 追番
+  
   commonweal: /404/ || fa fa-heartbeat # 公益404
 
 # Enable / Disable menu icons / item badges.
