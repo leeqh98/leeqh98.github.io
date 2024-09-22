@@ -1,5 +1,5 @@
 Clash Dashboard 访问地址: http://<ip>:9090/ui
-Secret: bb17273e87587efb4531fcbe94fc1ff7ab584f445e3b5a43aac2e344f368d7b8
+Secret: 
 
 
 vim .env
