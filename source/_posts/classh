@@ -1,0 +1,21 @@
+Clash Dashboard 访问地址: http://<ip>:9090/ui
+Secret: bb17273e87587efb4531fcbe94fc1ff7ab584f445e3b5a43aac2e344f368d7b8
+
+
+vim .env
+
+sudo bash start.sh
+
+source /etc/profile.d/clash.sh
+
+proxy_on
+
+netstat -tln | grep -E '9090|789.'
+
+env | grep -E 'http_proxy|https_proxy'
+
+
+sudo shutdown.sh
+
+proxy_off
+
