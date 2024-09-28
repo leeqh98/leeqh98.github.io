@@ -1,5 +1,7 @@
 # introduce 
 
+
+```bashscript
 ├── _config.yml
 ├── package.json
 ├── scaffolds
@@ -7,6 +9,7 @@
 |   ├── _drafts
 |   └── _posts
 └── themes
+```
 
 * _config.yml
 * package.json
