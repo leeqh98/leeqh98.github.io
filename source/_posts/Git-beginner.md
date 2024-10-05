@@ -114,6 +114,10 @@ pro-git 中文手册
 
 GitHub 上的帮助文档,
 
+Microsoft  Learn 上也有git 的学习教程,边学习边练习.
+
+[基本 Git 命令 - Training | Microsoft Learn](https://learn.microsoft.com/zh-cn/training/modules/intro-to-git/3-basic-git-commands)
+
 
 
 网络上随便搜索都有教程.码云的帮助页面一堆,但是质量良莠不齐.
@@ -217,7 +221,7 @@ git remote -v
 git pull 
 git push -u origin main
 
-```
+```shell
 
 
 
