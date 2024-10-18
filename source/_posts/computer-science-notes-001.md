@@ -133,3 +133,12 @@ cl /? # 微软风格, dos时代兼容其他的风格,路径是反斜杠
 MFC Windows forms wpf uwp
 
 maui
+
+``` powershell
+code-insiders --list-extensions | ForEach-Object {
+code-insiders --uninstall-extension $_
+}
+# 通过执行cmdlet 和循环将所有的插件自动卸载
+# 遇到扩展的依赖问题,就在执行一次
+```
+
