@@ -142,3 +142,6 @@ code-insiders --uninstall-extension $_
 # 遇到扩展的依赖问题,就在执行一次
 ```
 
+#### gnu emacs
+c-u c-h t: to start chinese-gb18030 tutor
+
