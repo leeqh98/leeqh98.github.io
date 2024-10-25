@@ -244,3 +244,12 @@ git fetch
 git checkout branchname
 
 [learn git branch](https://help.gitee.com/learn-Git-Branching)
+## work
+git clone ; git init
+### config
+git branch; git remote; 
+git branch new_branch; git branch -d delete_branch; git branch -m new_name_branch;
+git remote -v; 
+git switch branch_name
+git branch --set-upstream-to=origin/main main
+
