@@ -29,3 +29,19 @@ kernel
 document manpages manpages-dev manpages-posix
 etc.
 faq; reference debian 
+## bash mode
+.bashrc
+
+set -o vi
+$HOME/.inputrc
+set editing-mode vi
+set keymap vi
+set show-mode-in-prompt on # (bash >= 4.3)
+
+set keymap vi-command 
+Control-l: clear-screen
+
+set keymap vi-insert
+Control-l: clear-screen
+
+
