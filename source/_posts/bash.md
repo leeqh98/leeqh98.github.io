@@ -1,3 +1,12 @@
+
+
+---
+title: Bash
+date: 2024-11-29 22:11:00
+tags: Bash
+categories:
+---
+
 # the art of command line
 
 ## Bash command
@@ -43,5 +52,4 @@ Control-l: clear-screen
 
 set keymap vi-insert
 Control-l: clear-screen
-
 

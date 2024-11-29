@@ -2,7 +2,7 @@
 title: computer science notes 001
 date: 2024-09-15 22:02:03
 tags: notes
-categories:计算机科学笔记
+categories: 计算机科学笔记
 ---
 
 # 计算机科学笔记 001
