@@ -10,7 +10,7 @@ keywords: 'happy'
 author: leeqh98
 language: 
   - zh-CN
-  - en
+  # - en 暂时不考虑英文页面了
 timezone: 'Asia/Shanghai'
 
 # URL
